@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Reflection;
 
-namespace GWProtocalTemplate.CommonUtils
+namespace CommonUtils
 {
     public class LogProvider
     {
