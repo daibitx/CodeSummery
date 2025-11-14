@@ -1,0 +1,12 @@
+FROM golang:1.22-alpine
+
+WORKDIR /app
+
+COPY . .
+ENV MYSQL_DSN = ""
+ENV RUN_MODE = "debug"
+ENV PORT = 49121
+
+RUN go build -o app ./cmd
+
+CMD [ "./app" ]
